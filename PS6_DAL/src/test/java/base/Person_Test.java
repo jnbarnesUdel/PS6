@@ -35,6 +35,7 @@ public class Person_Test {
 
 	@After
 	public void tearDown() throws Exception {
+		PersonDAL.deletePerson(per1.getPersonID());
 	}
 
 	@Test
