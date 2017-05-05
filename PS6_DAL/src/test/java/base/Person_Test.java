@@ -41,7 +41,9 @@ public class Person_Test {
 		per1.setStreet("214 Labrador Lane");
 		
 		PersonDAL.addPerson(per1);
+		PersonDomainModel per2 = PersonDAL.getPerson(per1.getPersonID());
 		
+		assertNotNull(per2);
 		
 	}
 
